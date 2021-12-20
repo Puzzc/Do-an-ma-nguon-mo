@@ -9,7 +9,7 @@
     $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^"; 
     return (preg_match ($pattern, $email))?TRUE:FALSE;
     }
-    
+    //thêm pass mã hoá md5
     $passwd_csdl="25d55ad283aa400af464c76d713c07ad"; 
    if(checkValidEmail($email)&&mb_strlen($passwd)>=8){
 
